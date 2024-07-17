@@ -225,18 +225,18 @@
                     </button>
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form id="contact-form">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your E-mail" required>
-                        <textarea name="Message" id="" rows="4" placeholder="Your Message"></textarea>
-                        <button class="button">
+                        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button">
                             <p>Submit</p>
                         </button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <footer class="footer">
         <div class="social">
@@ -255,6 +255,14 @@
         </p>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("oIe0t-e86WvuofuPv");
+    })();
+</script>
+
+
 
 </body>
 </html>
